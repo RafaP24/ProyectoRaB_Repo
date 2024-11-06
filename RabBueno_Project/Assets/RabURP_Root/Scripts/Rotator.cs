@@ -8,7 +8,6 @@ public class Rotator : MonoBehaviour
     public float speedY;
     public float speedZ;
 
-
     // Start is called before the first frame update
     void Start()
     {
@@ -23,11 +22,9 @@ public class Rotator : MonoBehaviour
 
     void Rotation()
     {
-        transform.Rotate(Vector3.right * speedX * Time.deltaTime); 
-        transform.Rotate(Vector3.up * speedY * Time.deltaTime); 
-        transform.Rotate(Vector3.forward * speedZ * Time.deltaTime); 
-
+        transform.Rotate(Vector3.right * speedX * Time.deltaTime);
+        transform.Rotate(Vector3.up * speedY * Time.deltaTime);
+        transform.Rotate(Vector3.forward * speedZ * Time.deltaTime);
     }
-
 
 }
