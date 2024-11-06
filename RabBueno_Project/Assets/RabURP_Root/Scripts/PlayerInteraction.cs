@@ -4,13 +4,11 @@ using UnityEngine;
 
 public class PlayerInteraction : MonoBehaviour
 {
-
-    public int points; //variable que almacena los puntos del jugador
+    public int points; //Variable que almacena los puntos del jugador
     public int winPoints; //Define la cantidad de puntos necesarios para pasar de nivel
     public GameObject winGoal; //Referencia al objeto que representa la meta
-   
 
-
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -21,10 +19,10 @@ public class PlayerInteraction : MonoBehaviour
     void Update()
     {
         if (points >= winPoints)
-          {
+        {
             winGoal.SetActive(true);
-          }
-       
+        }
+        
     }
 
     private void OnTriggerEnter(Collider other)
@@ -35,14 +33,7 @@ public class PlayerInteraction : MonoBehaviour
             other.gameObject.SetActive(false); //Apaga el objeto con el que he chocado
             //Destroy(other.gameObject);
         }
-
-
     }
-       
 
-  
+    
 }
-
-
-
-
