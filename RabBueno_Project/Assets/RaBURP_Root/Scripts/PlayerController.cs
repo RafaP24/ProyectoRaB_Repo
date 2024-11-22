@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -42,7 +43,7 @@ public class PlayerController : MonoBehaviour
         horInput = Input.GetAxis("Horizontal");
         verInput = Input.GetAxis("Vertical");
         Jump();
-        if (transform.position.y < fallLimit) { Respawn(); }
+        if (transform.position.y < fallLimit) { SceneManager.LoadScene("DieFall"); }
     }
 
 
