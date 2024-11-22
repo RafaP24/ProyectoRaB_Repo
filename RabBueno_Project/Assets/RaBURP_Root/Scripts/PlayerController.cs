@@ -11,6 +11,8 @@ public class PlayerController : MonoBehaviour
     [Header("General References")]
     public Rigidbody playerRb; //Almacén del Rigidbody del player. Me permite moverlo
     public AudioSource playerAudio; //Referencia al reproductor de sonidos del player
+    public EnemyRespawn respawnScript;
+    
 
     [Header("Movement Variables")]
     public float speed;
@@ -43,6 +45,16 @@ public class PlayerController : MonoBehaviour
         if (transform.position.y < fallLimit) { Respawn(); }
     }
 
+
+    private void OnTriggerEnter(Collider collision)
+    {
+
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            respawnScript.DeadPlayer();
+        }
+    }
+
     private void FixedUpdate()
     {
         //Aquí se codea/llama a acciones que dependan de la física CONSTANTE
@@ -58,13 +70,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.CompareTag("PickUp"))
-        {
-            playerAudio.PlayOneShot(soundLibrary[2]);
-        }
-    }
+   
 
     void VelocityMove()
     {

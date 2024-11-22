@@ -302,8 +302,8 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 920723127}
   m_PrefabAsset: {fileID: 0}
---- !u!64 &615045918
-MeshCollider:
+--- !u!65 &615045922
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -317,13 +317,12 @@ MeshCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -7895665065457907091, guid: f11bd33d689969447a5f7c0875f0aa3f, type: 3}
+  serializedVersion: 3
+  m_Size: {x: 1.2174832, y: 1.9265087, z: 0.50570524}
+  m_Center: {x: -8.142763e-22, y: 0.9613278, z: -0.030586205}
 --- !u!1 &744424312
 GameObject:
   m_ObjectHideFlags: 0
@@ -526,6 +525,7 @@ GameObject:
   - component: {fileID: 853090363}
   - component: {fileID: 853090362}
   - component: {fileID: 853090369}
+  - component: {fileID: 853090370}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -547,6 +547,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerRb: {fileID: 853090364}
   playerAudio: {fileID: 853090369}
+  respawnScript: {fileID: 853090370}
   speed: 6.5
   jumpForce: 5
   isGrounded: 0
@@ -780,6 +781,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &853090370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 853090361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38297c7473f53cb468309f672c45158b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  posRespawn: {fileID: 1521816288}
 --- !u!1 &911179439
 GameObject:
   m_ObjectHideFlags: 0
@@ -996,6 +1010,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Wall
       objectReference: {fileID: 0}
+    - target: {fileID: -4283547467835747565, guid: f11bd33d689969447a5f7c0875f0aa3f,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -2609345561549811183, guid: f11bd33d689969447a5f7c0875f0aa3f,
         type: 3}
       propertyPath: m_TagString
@@ -1006,6 +1025,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Laberinto Minotauro v1.2
       objectReference: {fileID: 0}
+    - target: {fileID: 3934807447749509398, guid: f11bd33d689969447a5f7c0875f0aa3f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 3679809597262444313, guid: f11bd33d689969447a5f7c0875f0aa3f, type: 3}
@@ -1015,7 +1039,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3934807447749509398, guid: f11bd33d689969447a5f7c0875f0aa3f,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 615045918}
+      addedObject: {fileID: 615045922}
     - targetCorrespondingSourceObject: {fileID: -6156058261406820504, guid: f11bd33d689969447a5f7c0875f0aa3f,
         type: 3}
       insertIndex: -1
