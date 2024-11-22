@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerInteraction : MonoBehaviour
 {
@@ -33,7 +35,19 @@ public class PlayerInteraction : MonoBehaviour
             other.gameObject.SetActive(false); //Apaga el objeto con el que he chocado
             //Destroy(other.gameObject);
         }
+        if (other.gameObject.CompareTag("Final"))
+        {
+            if (points >= winPoints)
+            {
+                SceneManager.LoadScene("WinScene");
+            }
+            else
+            {
+                SceneManager.LoadScene("BadEnding");
+            }
+        }
     }
-
     
+
+
 }

@@ -5,7 +5,25 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/RabURP_Root/Scenes/MainMenu.unity
+    guid: d6e4a0e2cfdefcd4a9ce295c98f4784a
+  - enabled: 1
+    path: Assets/RabURP_Root/Scenes/RubenTest.unity
+    guid: b82f35d1fa701f64299eac03ec61c95e
+  - enabled: 1
+    path: Assets/RabURP_Root/Scenes/DieMino.unity
+    guid: a45eba51834f82a48829d4f241462e43
+  - enabled: 1
+    path: Assets/RabURP_Root/Scenes/DieFall.unity
+    guid: a16453603c4b0c446b0ef51a1e1e5ed2
+  - enabled: 1
+    path: Assets/RabURP_Root/Scenes/WinScene.unity
+    guid: 4ca391c252e0616408ef94b1ca5e159c
+  - enabled: 1
+    path: Assets/RabURP_Root/Scenes/BadEnding.unity
+    guid: 62d75996372bfc743bb961ae2cee0962
   m_configObjects: {}

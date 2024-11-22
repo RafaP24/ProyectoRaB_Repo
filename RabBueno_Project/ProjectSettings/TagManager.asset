@@ -7,6 +7,8 @@ TagManager:
   - Ground
   - Wall
   - mino
+  - PickUp
+  - Final
   layers:
   - Default
   - TransparentFX

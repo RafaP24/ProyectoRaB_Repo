@@ -47,7 +47,6 @@ public class PlayerController : MonoBehaviour
     {
         //Aquí se codea/llama a acciones que dependan de la física CONSTANTE
         VelocityMove();
-        //ForceMove();
     }
 
     private void OnCollisionEnter(Collision collision)
