@@ -21,7 +21,7 @@ EditorBuildSettings:
     path: Assets/RabURP_Root/Scenes/DieFall.unity
     guid: a16453603c4b0c446b0ef51a1e1e5ed2
   - enabled: 1
-    path: Assets/RabURP_Root/Scenes/WinScene.unity
+    path: Assets/RabURP_Root/Scenes/GoodEnding.unity
     guid: 4ca391c252e0616408ef94b1ca5e159c
   - enabled: 1
     path: Assets/RabURP_Root/Scenes/BadEnding.unity

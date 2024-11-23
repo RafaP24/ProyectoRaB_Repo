@@ -39,7 +39,7 @@ public class PlayerInteraction : MonoBehaviour
         {
             if (points >= winPoints)
             {
-                SceneManager.LoadScene("WinScene");
+                SceneManager.LoadScene("GoodEnding");
             }
             else
             {
