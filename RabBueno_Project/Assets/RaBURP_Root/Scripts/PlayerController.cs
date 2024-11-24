@@ -50,11 +50,17 @@ public class PlayerController : MonoBehaviour
     private void OnTriggerEnter(Collider collision)
     {
 
-        if (collision.gameObject.CompareTag("Enemy"))
+        if (collision.gameObject.CompareTag("PickUp"))
         {
-            respawnScript.DeadPlayer();
+            playerAudio.PlayOneShot(soundLibrary[1]);
         }
+
+        if (collision.gameObject.CompareTag("Enemy")) { SceneManager.LoadScene("DieMino"); }
+  
     }
+        
+
+
 
     private void FixedUpdate()
     {
@@ -69,8 +75,6 @@ public class PlayerController : MonoBehaviour
             isGrounded = true;
         }
     }
-
-   
 
     void VelocityMove()
     {
@@ -97,7 +101,7 @@ public class PlayerController : MonoBehaviour
 
     void Respawn()
     {
-        playerAudio.PlayOneShot(soundLibrary[1]);
+        playerAudio.PlayOneShot(soundLibrary[2]);
         //Cambia la posición del player por la posición del punto de respawn
         transform.position = respawnPoint.transform.position;
     }

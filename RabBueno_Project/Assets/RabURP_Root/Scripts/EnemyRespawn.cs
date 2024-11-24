@@ -16,5 +16,7 @@ public class EnemyRespawn : MonoBehaviour
 
     {
         transform.position = posRespawn.position;
+
     }
+
 }

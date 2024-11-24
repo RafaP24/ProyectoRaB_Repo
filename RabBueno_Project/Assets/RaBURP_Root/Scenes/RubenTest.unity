@@ -1654,15 +1654,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerRb: {fileID: 853090364}
-  playerAudio: {fileID: 0}
+  playerAudio: {fileID: 853090371}
   respawnScript: {fileID: 853090370}
   speed: 5.5
   jumpForce: 3.5
   isGrounded: 1
   soundLibrary:
-  - {fileID: 8300000, guid: 362b7f3a85bf00744b5b0f9e925af2c4, type: 3}
-  - {fileID: 8300000, guid: d8af0416a36b7234f9a8c47d79854f77, type: 3}
-  - {fileID: 8300000, guid: 692ef15895c36bf4eab3fe209a2a61fa, type: 3}
+  - {fileID: 8300000, guid: 8e043069dc7c44b4d9955754821fbf2b, type: 3}
+  - {fileID: 8300000, guid: 446c58ac517be8d4b9a1b5f6ea6da8b5, type: 3}
+  - {fileID: 8300000, guid: 78dff4492a6e0454cb60fe893b373015, type: 3}
   respawnPoint: {fileID: 1521816287}
   fallLimit: -2
 --- !u!114 &853090363
@@ -1817,7 +1817,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
