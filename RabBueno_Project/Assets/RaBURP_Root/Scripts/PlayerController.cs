@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -13,6 +14,7 @@ public class PlayerController : MonoBehaviour
     public Rigidbody playerRb; //Almacén del Rigidbody del player. Me permite moverlo
     public AudioSource playerAudio; //Referencia al reproductor de sonidos del player
     public EnemyRespawn respawnScript;
+
     
 
     [Header("Movement Variables")]
