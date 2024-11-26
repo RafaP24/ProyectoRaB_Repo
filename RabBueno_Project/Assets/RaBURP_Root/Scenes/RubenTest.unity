@@ -1663,7 +1663,6 @@ MonoBehaviour:
   soundLibrary:
   - {fileID: 8300000, guid: 8e043069dc7c44b4d9955754821fbf2b, type: 3}
   - {fileID: 8300000, guid: 446c58ac517be8d4b9a1b5f6ea6da8b5, type: 3}
-  - {fileID: 8300000, guid: 78dff4492a6e0454cb60fe893b373015, type: 3}
   respawnPoint: {fileID: 1521816287}
   fallLimit: -0.1
 --- !u!114 &853090363
@@ -1827,7 +1826,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 150
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -2504,9 +2503,9 @@ RectTransform:
   m_Father: {fileID: 530318934}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 337, y: -132}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -372, y: -78}
   m_SizeDelta: {x: 199, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1258833494
@@ -2531,15 +2530,16 @@ MonoBehaviour:
       m_Calls: []
   m_text: Feathers =
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: f4756fe0b0f9e8a4ba7863b5733f602d, type: 2}
+  m_sharedMaterial: {fileID: 7318158071210605342, guid: f4756fe0b0f9e8a4ba7863b5733f602d,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278229180
+  m_fontColor: {r: 0.735849, g: 0.59560406, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
